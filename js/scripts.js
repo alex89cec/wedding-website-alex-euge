@@ -214,8 +214,7 @@ $(document).ready(function () {
         debugger;
         $('#alert-wrapper').html(alert_markup('info', '<strong>Un Segundo!</strong> Preparando los Detalles.'));
         debugger;
-        if (MD5($('#invite_code').val()) !== 'b0e53b10c1f55ede516b240036b88f40'
-            && MD5($('#invite_code').val()) !== '2ac7f43695eb0479d5846bb38eec59cc') {
+        if (MD5($('#invite_code').val()) !== '4bd77a880756500e5f2f9db8459beb08') {
             $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> El Codigo no es el correcto ! .'));
         } else {
             debugger;
