@@ -214,7 +214,7 @@ $(document).ready(function () {
         debugger;
         $('#alert-wrapper').html(alert_markup('info', '<strong>Un Segundo!</strong> Preparando los Detalles.'));
         debugger;
-        if (MD5($('#invite_code').val()) !== '4bd77a880756500e5f2f9db8459beb08') {
+        if (MD5($('#invite_code').val()) != '4bd77a880756500e5f2f9db8459beb08') {
             $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> El Codigo no es el correcto ! .'));
         } else {
             debugger;
