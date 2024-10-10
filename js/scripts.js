@@ -219,6 +219,11 @@ $(document).ready(function () {
             $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> El Codigo no es el correcto ! .'));
         } else {
             debugger;
+            var data2 = new FormData();
+            data2.append("invite_code", $('#invite_code').val());
+            data2.append("name", $('#name').val());
+            data2.append("email", $('#email').val());
+            debugger;
             $.post('https://script.google.com/macros/s/AKfycbwdacxDpisuo-6SQe3Ztiv4OZGuybun3QUrDz-t82tQ8fD8mkeO0Whlsxxb-BiDaZq1vQ/exec', data)
                 .done(function (data) {
                     console.log(data);
