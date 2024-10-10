@@ -218,7 +218,7 @@ $(document).ready(function () {
             && MD5($('#invite_code').val()) !== '2ac7f43695eb0479d5846bb38eec59cc') {
             $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> El Codigo no es el correcto ! .'));
         } else {
-            $.post('https://script.google.com/macros/s/AKfycbyzW0vjFmCj5COxN3DaFncczJVilwBeTS0QQAQfSzZ3sGpjXHt2C66t-T0KhvHr7J57MA/exec', data)
+            $.post('https://script.google.com/macros/s/AKfycbwm2K3j8vnnr5YjEgkeAFVqvOszuRo1MEIPFDE7F5EVWKyi6tfXFGpAYsYiPlqTdkYWWA/exec', data)
                 .done(function (data) {
                     console.log(data);
                     if (data.result === "error") {
